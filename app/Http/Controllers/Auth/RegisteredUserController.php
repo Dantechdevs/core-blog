@@ -36,7 +36,7 @@ class RegisteredUserController extends Controller
             'confirmPassword' => 'required|same:password',
         ], [
             'password.required' => 'Password is required',
-            'password.uncompromised' => 'The given new password has appeared in a data leak by https://haveibeenpwned.com please choose a different new password. ',
+          
             'confirmPassword.required' => 'Confirm password is required',
             'confirmPassword.same' => 'Confirm password and new password must match',
         ]);
