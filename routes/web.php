@@ -40,6 +40,9 @@ Route::prefix(config('admintw.prefix'))->middleware(['auth', 'verified', 'active
         Route::get('roles/{role}/edit', Edit::class)->name('admin.settings.roles.edit');
     });
 
+  //Advocates
+    require __DIR__.'/advocates.php';
+
     Route::prefix('users')->group(function () {
         Route::get('/', Users::class)->name('admin.users.index');
         Route::get('{user}/edit', EditUser::class)->name('admin.users.edit');

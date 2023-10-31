@@ -52,3 +52,6 @@
 @can('view_users')
     <x-nav.link route="admin.users.index" icon="fas fa-users" wire:navigate>Users</x-nav.link>
 @endcan
+ @can('view_users')
+            <x-nav.group-item route="admin.advocates.index" icon="far fa-circle" wire:navigate>Advocates</x-nav.group-item>
+        @endcan
