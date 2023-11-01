@@ -12,12 +12,7 @@ return new class extends Migration
     {
         Schema::create('topics', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->unsignedBigInteger('user_id');
-            $table->unsignedBigInteger('topic_id');
-            $table->text('description');
-            $table->string('image_url');
-            $table->text('body');
+            $table->string('name');
             $table->timestamps();
         });
     }
