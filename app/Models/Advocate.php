@@ -10,17 +10,17 @@ class Advocate extends Model
 {
     use HasFactory;
 
-    protected $fillable= [
-          'name',
-          'address',
-          'location',
-          'phone',
-           'email',
-           'bio',
-           'facebook',
-           'twitter',
-           'linkin',
-           'website'
+    protected $fillable = [
+        'name',
+        'address',
+        'phone',
+        'email',
+        'bio',
+        'location',
+        'website',
+        'twitter',
+        'facebook',
+        'linkin'
 
 
     ];
