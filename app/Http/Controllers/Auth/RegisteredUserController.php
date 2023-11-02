@@ -31,18 +31,25 @@ class RegisteredUserController extends Controller
     {
         $validated = $request->validate([
             'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:'.User::class],
+            //'account_type' => ['required', 'string', 'max:255'],
+            'username' => ['required', 'string', 'max:255', 'unique:' . User::class],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:' . User::class],
             'password' => ['required', Rules\Password::defaults()],
             'confirmPassword' => 'required|same:password',
         ], [
             'password.required' => 'Password is required',
+
           
+
+            // 'password.uncompromised' => 'The given new password has appeared in a data leak by https://haveibeenpwned.com please choose a different new password. ',
+
             'confirmPassword.required' => 'Confirm password is required',
             'confirmPassword.same' => 'Confirm password and new password must match',
         ]);
 
         $user = User::create([
             'name' => $validated['name'],
+            'username' => $validated['name'],
             'slug' => Str::slug($validated['name']),
             'email' => $validated['email'],
             'password' => bcrypt($validated['password']),
@@ -54,7 +61,7 @@ class RegisteredUserController extends Controller
 
         //generate image
         $name = get_initials($user->name);
-        $id = $user->id.'.png';
+        $id = $user->id . '.png';
         $path = 'users/';
         $imagePath = create_avatar($name, $id, $path);
 
@@ -63,14 +70,14 @@ class RegisteredUserController extends Controller
         $user->save();
 
         add_user_log([
-            'title' => 'registered '.$user->name,
+            'title' => 'registered ' . $user->name,
             'reference_id' => $user->id,
             'section' => 'Auth',
             'type' => 'Register',
         ]);
 
-        $user->sendEmailVerificationNotification();
-        flash('Please check your email for a verification link.')->info();
+        // $user->sendEmailVerificationNotification();
+        // flash('Please check your email for a verification link.')->info();
 
         return redirect()->back();
     }
