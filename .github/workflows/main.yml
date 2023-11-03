@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-node@master
      
       - name: Install Dependencies
-        run: composer install --no-interaction --no-suggest --ignore-platform-reqs
+        run: composer update 
       - name: Generate key
         run: php artisan key:generate
       - name: Generate storage link
