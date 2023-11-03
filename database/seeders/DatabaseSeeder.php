@@ -14,6 +14,7 @@ class DatabaseSeeder extends Seeder
             SettingsDatabaseSeeder::class,
             UserDatabaseSeeder::class,
             AdvocatesTableSeeder::class,
+            CategoriesTableSeeder::class,
         ]);
     }
 }
