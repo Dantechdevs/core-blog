@@ -1,7 +1,7 @@
 <button @click.stop="sidebarOpen = !sidebarOpen" class="md:hidden focus:outline-none pl-1 pt-4 pr-2">
     <svg class="w-6 transition ease-in-out duration-150 text-white" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"
-         fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
     </svg>
 </button>
 
@@ -33,10 +33,11 @@
     <x-nav.link route="dashboard" icon="fas fa-home" wire:navigate>{{ __('Dashboard') }}</x-nav.link>
 @endcan
 
-@if(can('view_system_settings') || can('view_roles') || can('view_audit_trails') || can('view_sent_emails'))
+@if (can('view_system_settings') || can('view_roles') || can('view_audit_trails') || can('view_sent_emails'))
     <x-nav.group label="Settings" route="admin.settings" icon="fas fa-cogs">
         @can('view_audit_trails')
-            <x-nav.group-item route="admin.settings.audit-trails.index" icon="far fa-circle" wire:navigate>Audit Trails</x-nav.group-item>
+            <x-nav.group-item route="admin.settings.audit-trails.index" icon="far fa-circle" wire:navigate>Audit
+                Trails</x-nav.group-item>
         @endcan
 
         @can('view_roles')
@@ -51,4 +52,11 @@
 
 @can('view_users')
     <x-nav.link route="admin.users.index" icon="fas fa-users" wire:navigate>Users</x-nav.link>
+@endcan
+@can('view_users')
+    <x-nav.group-item route="admin.advocates.index" icon="fa fa-graduation-cap" wire:navigate>Advocates</x-nav.group-item>
+@endcan
+@can('view_users')
+    <x-nav.group-item route="admin.categories.index" icon="fa fa-graduation-cap" wire:navigate>Areas of
+        Law</x-nav.group-item>
 @endcan
