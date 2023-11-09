@@ -23,7 +23,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', WelcomeController::class);
+ //Advocates frontend
+    require __DIR__.'/frontend.php';
 
 Route::prefix(config('admintw.prefix'))->middleware(['auth', 'verified', 'activeUser', 'IpCheckMiddleware'])->group(function () {
     Route::get('/', Dashboard::class)->name('dashboard');
