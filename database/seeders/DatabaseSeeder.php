@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder
             UserDatabaseSeeder::class,
             AdvocatesTableSeeder::class,
             CategoriesTableSeeder::class,
+            TopicsTableSeeder::class,
         ]);
     }
 }

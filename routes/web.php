@@ -10,6 +10,8 @@ use App\Livewire\Admin\Settings\Settings;
 use App\Livewire\Admin\Users\EditUser;
 use App\Livewire\Admin\Users\ShowUser;
 use App\Livewire\Admin\Users\Users;
+use App\Livewire\TopicsCreate;
+use App\Livewire\TopicsIndex;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -48,6 +50,13 @@ Route::prefix(config('admintw.prefix'))->middleware(['auth', 'verified', 'active
         Route::get('{user}/edit', EditUser::class)->name('admin.users.edit');
         Route::get('{user}', ShowUser::class)->name('admin.users.show');
     });
+
+    //topics
+    Route::prefix('topics')->group(function (){
+        Route::get('/index',TopicsIndex::class)->name("admin.topics.index");
+        Route::get('create',TopicsCreate::class)->name("admin.topics.create");
+    });
+    //admin/topics/index
 });
 
 require __DIR__.'/auth.php';

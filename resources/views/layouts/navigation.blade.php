@@ -60,3 +60,6 @@
     <x-nav.group-item route="admin.categories.index" icon="fa fa-graduation-cap" wire:navigate>Areas of
         Law</x-nav.group-item>
 @endcan
+@can('view_users')
+    <x-nav.group-item route="admin.topics.index" icon="fa fa-graduation-cap" wire:navigate>Topics</x-nav.group-item>
+@endcan
