@@ -12,6 +12,7 @@ use App\Livewire\Admin\Users\ShowUser;
 use App\Livewire\Admin\Users\Users;
 use App\Livewire\TopicsCreate;
 use App\Livewire\TopicsIndex;
+use App\Livewire\TopicsEdit;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,7 +26,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', WelcomeController::class);
+ //Advocates frontend
+    require __DIR__.'/frontend.php';
 
 Route::prefix(config('admintw.prefix'))->middleware(['auth', 'verified', 'activeUser', 'IpCheckMiddleware'])->group(function () {
     Route::get('/', Dashboard::class)->name('dashboard');
@@ -55,6 +57,7 @@ Route::prefix(config('admintw.prefix'))->middleware(['auth', 'verified', 'active
     Route::prefix('topics')->group(function (){
         Route::get('/index',TopicsIndex::class)->name("admin.topics.index");
         Route::get('create',TopicsCreate::class)->name("admin.topics.create");
+        Route::get('edit',TopicsEdit::class)->name("admin.topics.edit");
     });
     //admin/topics/index
 });

@@ -2891,16 +2891,16 @@
         },
         {
             "name": "livewire/livewire",
-            "version": "v3.0.10",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/livewire/livewire.git",
-                "reference": "cae998aa9a474dc0de81869ab1536014c7b31a64"
+                "reference": "db1e02c645ae12a7cdee9b1ea0d65bf3aafc0f08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/livewire/livewire/zipball/cae998aa9a474dc0de81869ab1536014c7b31a64",
-                "reference": "cae998aa9a474dc0de81869ab1536014c7b31a64",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/db1e02c645ae12a7cdee9b1ea0d65bf3aafc0f08",
+                "reference": "db1e02c645ae12a7cdee9b1ea0d65bf3aafc0f08",
                 "shasum": ""
             },
             "require": {
@@ -2953,7 +2953,7 @@
             "description": "A front-end framework for Laravel.",
             "support": {
                 "issues": "https://github.com/livewire/livewire/issues",
-                "source": "https://github.com/livewire/livewire/tree/v3.0.10"
+                "source": "https://github.com/livewire/livewire/tree/v3.1.0"
             },
             "funding": [
                 {
@@ -2961,7 +2961,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-10-18T11:18:12+00:00"
+            "time": "2023-11-03T15:05:18+00:00"
         },
         {
             "name": "meyfa/php-svg",
@@ -8035,6 +8035,7 @@
         },
         {
             "name": "laravel/breeze",
+<<<<<<< HEAD
             "version": "v1.26.0",
             "source": {
                 "type": "git",
@@ -8045,6 +8046,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/breeze/zipball/c348b02c6af24ee26e7647cdb6b1321da7aecaa9",
                 "reference": "c348b02c6af24ee26e7647cdb6b1321da7aecaa9",
+=======
+            "version": "v1.26.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/breeze.git",
+                "reference": "8757692a7be1a6174a0f1a5d3c280a8912d45dd0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/breeze/zipball/8757692a7be1a6174a0f1a5d3c280a8912d45dd0",
+                "reference": "8757692a7be1a6174a0f1a5d3c280a8912d45dd0",
+>>>>>>> f46be72a342cf9d10fd0b757731fc9d59b14a0d0
                 "shasum": ""
             },
             "require": {
@@ -8093,20 +8106,24 @@
                 "issues": "https://github.com/laravel/breeze/issues",
                 "source": "https://github.com/laravel/breeze"
             },
+<<<<<<< HEAD
             "time": "2023-10-29T16:19:56+00:00"
+=======
+            "time": "2023-11-01T14:18:45+00:00"
+>>>>>>> f46be72a342cf9d10fd0b757731fc9d59b14a0d0
         },
         {
             "name": "laravel/pint",
-            "version": "v1.13.5",
+            "version": "v1.13.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/pint.git",
-                "reference": "df105cf8ce7a8f0b8a9425ff45cd281a5448e423"
+                "reference": "3e3d2ab01c7d8b484c18e6100ecf53639c744fa7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/pint/zipball/df105cf8ce7a8f0b8a9425ff45cd281a5448e423",
-                "reference": "df105cf8ce7a8f0b8a9425ff45cd281a5448e423",
+                "url": "https://api.github.com/repos/laravel/pint/zipball/3e3d2ab01c7d8b484c18e6100ecf53639c744fa7",
+                "reference": "3e3d2ab01c7d8b484c18e6100ecf53639c744fa7",
                 "shasum": ""
             },
             "require": {
@@ -8117,13 +8134,13 @@
                 "php": "^8.1.0"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.34.1",
-                "illuminate/view": "^10.26.2",
-                "laravel-zero/framework": "^10.1.2",
+                "friendsofphp/php-cs-fixer": "^3.38.0",
+                "illuminate/view": "^10.30.1",
+                "laravel-zero/framework": "^10.3.0",
                 "mockery/mockery": "^1.6.6",
                 "nunomaduro/larastan": "^2.6.4",
                 "nunomaduro/termwind": "^1.15.1",
-                "pestphp/pest": "^2.20.0"
+                "pestphp/pest": "^2.24.2"
             },
             "bin": [
                 "builds/pint"
@@ -8159,7 +8176,7 @@
                 "issues": "https://github.com/laravel/pint/issues",
                 "source": "https://github.com/laravel/pint"
             },
-            "time": "2023-10-26T09:26:10+00:00"
+            "time": "2023-11-07T17:59:57+00:00"
         },
         {
             "name": "laravel/sail",
@@ -8468,20 +8485,20 @@
         },
         {
             "name": "pestphp/pest",
-            "version": "v2.24.1",
+            "version": "v2.24.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pestphp/pest.git",
-                "reference": "fd4f161edd0e26029ba9efb769cfe16bf5483840"
+                "reference": "f235d84d95aca83425d83e64792352a7424a89d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pestphp/pest/zipball/fd4f161edd0e26029ba9efb769cfe16bf5483840",
-                "reference": "fd4f161edd0e26029ba9efb769cfe16bf5483840",
+                "url": "https://api.github.com/repos/pestphp/pest/zipball/f235d84d95aca83425d83e64792352a7424a89d5",
+                "reference": "f235d84d95aca83425d83e64792352a7424a89d5",
                 "shasum": ""
             },
             "require": {
-                "brianium/paratest": "^7.3.0",
+                "brianium/paratest": "^7.3.1",
                 "nunomaduro/collision": "^7.10.0|^8.0.0",
                 "nunomaduro/termwind": "^1.15.1|^2.0.0",
                 "pestphp/pest-plugin": "^2.1.1",
@@ -8523,6 +8540,11 @@
                         "Pest\\Plugins\\Version",
                         "Pest\\Plugins\\Parallel"
                     ]
+                },
+                "phpstan": {
+                    "includes": [
+                        "extension.neon"
+                    ]
                 }
             },
             "autoload": {
@@ -8555,7 +8577,7 @@
             ],
             "support": {
                 "issues": "https://github.com/pestphp/pest/issues",
-                "source": "https://github.com/pestphp/pest/tree/v2.24.1"
+                "source": "https://github.com/pestphp/pest/tree/v2.24.3"
             },
             "funding": [
                 {
@@ -8567,7 +8589,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-10-26T15:02:35+00:00"
+            "time": "2023-11-08T09:47:14+00:00"
         },
         {
             "name": "pestphp/pest-plugin",
@@ -9104,6 +9126,7 @@
         },
         {
             "name": "phpstan/phpstan",
+<<<<<<< HEAD
             "version": "1.10.40",
             "source": {
                 "type": "git",
@@ -9114,6 +9137,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/phpstan/phpstan/zipball/93c84b5bf7669920d823631e39904d69b9c7dc5d",
                 "reference": "93c84b5bf7669920d823631e39904d69b9c7dc5d",
+=======
+            "version": "1.10.41",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpstan/phpstan.git",
+                "reference": "c6174523c2a69231df55bdc65b61655e72876d76"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/c6174523c2a69231df55bdc65b61655e72876d76",
+                "reference": "c6174523c2a69231df55bdc65b61655e72876d76",
+>>>>>>> f46be72a342cf9d10fd0b757731fc9d59b14a0d0
                 "shasum": ""
             },
             "require": {
@@ -9162,7 +9197,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2023-10-30T14:48:31+00:00"
+=======
+            "time": "2023-11-05T12:57:57+00:00"
+>>>>>>> f46be72a342cf9d10fd0b757731fc9d59b14a0d0
         },
         {
             "name": "phpunit/php-code-coverage",
