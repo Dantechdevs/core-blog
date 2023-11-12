@@ -18,9 +18,7 @@ class Advocate extends Model
         'bio',
         'location',
         'website',
-        'twitter',
-        'facebook',
-        'linkin'
+       
 
 
     ];

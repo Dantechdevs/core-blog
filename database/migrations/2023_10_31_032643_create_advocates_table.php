@@ -19,9 +19,7 @@ return new class extends Migration
             $table->string("location");
             $table->string("website");
             $table->text("bio");
-            $table->string("facebook");
-            $table->string("twitter");
-            $table->string("linkin");
+          
             
             $table->timestamps();
         });
