@@ -182,9 +182,8 @@
                                 <i class="fa fa-globe fa-2x"></i>
                             </div>
                             <h5 class="mb-3">Web Development</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed
-                                stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                            <p>Website provides a vital online presence, making legal services easily accessible to a broader audience, offering information, and enabling potential clients to contact the firm conveniently</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="{{ route("pages.website.detail") }}">Read More</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
@@ -193,9 +192,8 @@
                                 <i class="fa fa-envelope fa-2x"></i>
                             </div>
                             <h5 class="mb-3">Proffesional Bussiness Email</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed
-                                stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                            <p>Utilizing a custom domain email address through webmail adds a level of professionalism to your communication.</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="{{ route("pages.website.emaildetails") }}">Read More</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
@@ -204,8 +202,7 @@
                                 <i class="fa fa-list-alt fa-2x"></i>
                             </div>
                             <h5 class="mb-3">Advocates Directory Listing</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed
-                                stet lorem.</p>
+                            <p>Advocate directories increase the visibility of legal professionals by making their profiles accessible to a broader audience.</p>
                             <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
                         </div>
                     </div>
@@ -215,9 +212,8 @@
                                 <i class="fa fa-comments fa-2x"></i>
                             </div>
                             <h5 class="mb-3">Advocates Forum</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed
-                                stet lorem.</p>
-                            <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                            <p>Advocate forums provide a space for legal professionals to share their knowledge, experiences, and insights</p>
+                            <a class="btn px-3 mt-auto mx-auto" href="">Join </a>
                         </div>
                     </div> <!--
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
@@ -354,15 +350,14 @@
                             <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg"
                                 style="width: 50px; height: 50px;">
                             <div class="ps-3">
-                                <h6 class="text-white mb-1">Client Name</h6>
-                                <small>Profession</small>
+                                <h6 class="text-white mb-1">Makuno Gachoya Advocates</h6>
+                                <small>Law Firm</small>
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-item bg-transparent border rounded text-white p-4">
                         <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore
-                            diam</p>
+                        <p>A game-changer for advocates seeking a robust online presence. As a legal professional, I understand the importance of a well-crafted website, and advocates.co.ke has exceeded my expectations.</p>
                         <div class="d-flex align-items-center">
                             <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg"
                                 style="width: 50px; height: 50px;">

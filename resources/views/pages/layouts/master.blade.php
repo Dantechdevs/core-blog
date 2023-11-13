@@ -45,12 +45,12 @@
 
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
-         @include("pages.includes.email-nav")
+         @include("pages.includes.nav")
          @include("pages.includes.banner")
             
         </div>
         <!-- Navbar & Hero End -->
-
+@yield('content')
 
       
        <!-- Footer Start -->
