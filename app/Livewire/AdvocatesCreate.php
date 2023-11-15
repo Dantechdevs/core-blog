@@ -42,9 +42,7 @@ class AdvocatesCreate extends Component
             'location' => $this->location,
             'address' => $this->address,
             'website' => $this->website,
-            'facebook' => $this->website,
-            'twitter' => $this->website,
-            'linkin' => $this->website,
+          
         ]);
         flash('Success Advocate created ')->success();
         return back();

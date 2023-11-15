@@ -19,7 +19,9 @@ class RegisteredUserController extends Controller
      */
     public function create(): View
     {
-        return view('auth.register');
+        return view('auth.register',[
+            'pagetitle'=>'New Account',
+        ]);
     }
 
     /**
@@ -79,6 +81,7 @@ class RegisteredUserController extends Controller
         // $user->sendEmailVerificationNotification();
         // flash('Please check your email for a verification link.')->info();
 
-        return redirect()->back();
+        return redirect()->route('login')
+        ->with('message', 'Account Created successfully!');;
     }
 }
