@@ -26,4 +26,13 @@ class PagesController extends Controller
         'pagetitle'=>$pagetitle,
     ]);
     }
+
+    public function contact(){
+        $pagetitle="Contact Us";
+        return view("pages.contact.index",[
+            'pagetitle'=>$pagetitle,
+        ]);
+        }
+
+
 }
